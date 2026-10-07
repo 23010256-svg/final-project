@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Skip Link */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+/* Navigation - FLEX */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+    background-color: #003366;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: yellow;
+}
+
+/* GRID */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* GALLERY FLEX */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* BOX MODEL */
+img {
+    width: 250px;
+    border: 4px solid #003366;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+/* nth-child */
+.gallery img:nth-child(even) {
+    border-radius: 50%;
+}
+
+/* Hover Effect */
+.gallery img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+}
